@@ -4,9 +4,16 @@
     <meta charset="utf-8" />
     <title>Bootstrap v5.1</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      body::before {
+        content: '';
+        display: block;
+        height: 55px;
+      }
+    </style>
   </head>
   <body>
-    <div class="navbar navbar-expand-md bg-dark navbar-dark text-white">
+    <div class="navbar navbar-expand-md bg-dark navbar-dark text-white fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand">AnasBanat</a>
         <button
@@ -20,13 +27,20 @@
         <div class="collapse navbar-collapse" id="mainmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#intro" class="nav-link">Get Started</a>
+              <a href="#hero" class="nav-link">Get Started</a>
+            </li>
+            <li class="nav-item">
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learn</a>
+              <ul class="dropdown-menu">
+                <li><a href="#learn" class="dropdown-item">Learn Bootstrap</a></li>
+                <li><a href="#next" class="dropdown-item">Where to go next</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="#faq" class="nav-link">Ask Me</a>
-            </li>
-            <li class="nav-item">
-              <a href="#youtube" class="nav-link">Explore More</a>
             </li>
           </ul>
         </div>
@@ -61,22 +75,208 @@
       </div>
     </section>
     <!-- Services -->
-    <div class="container my-5">
-      <div class="row">
-        <div class="card" style="width: 18rem">
-          <img src="img/hero.svg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          Features
+        </h2>
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light mb-3">
+              <img
+                src="https://picsum.photos/300/200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title text-info">Responsive</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore aperiam vero reprehenderit?
+                </p>
+                <a href="#" class="btn btn-info">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light mb-3">
+              <img
+                src="https://picsum.photos/300/200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title text-info">Responsive</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore aperiam vero reprehenderit?
+                </p>
+                <a href="#" class="btn btn-info">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light mb-3">
+              <img
+                src="https://picsum.photos/300/200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title text-info">Responsive</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore aperiam vero reprehenderit?
+                </p>
+                <a href="#" class="btn btn-info">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light mb-3">
+              <img
+                src="https://picsum.photos/300/200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title text-info">Responsive</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore aperiam vero reprehenderit?
+                </p>
+                <a href="#" class="btn btn-info">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- What to learn -->
+    <section id="learn" class="py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md">
+            <img src="img/complete_design.svg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md py-2 px-3">
+            <h2>Learn the Bisics</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores numquam saepe cumque debitis maiores. Beatae distinctio
+              provident qui voluptatum eius cupiditate sed pariatur nisi.
+              Aliquam nemo quis repellendus id fugit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestias culpa, minima repellat quasi ratione vero neque iste
+              quisquam temporibus provident.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next -->
+    <section id="next" class="py-5 bg-dark text-light">
+      <div class="container">
+        <div
+          class="row align-items-center justify-content-center flex-row-reverse"
+        >
+          <div class="col-md">
+            <img src="img/next.svg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md py-2 px-3">
+            <h2>Where to go next</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores numquam saepe cumque debitis maiores. Beatae distinctio
+              provident qui voluptatum eius cupiditate sed pariatur nisi.
+              Aliquam nemo quis repellendus id fugit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestias culpa, minima repellat quasi ratione vero neque iste
+              quisquam temporibus provident.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-3">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="bt-faq">
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="question-one">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#answer-one"
+              >
+                Question One
+              </button>
+            </h5>
+            <div
+              class="accordion-collapse collapse py-3 px-4"
+              id="answer-one"
+              data-bs-parent="#bt-faq"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repudiandae ipsum aliquam quas veritatis numquam sint vel vero similique et quam, nesciunt vitae deleniti velit! Culpa libero illo modi tempora doloremque illum labore enim vel officia debitis, magni repellat totam quia facere quisquam nemo! Error corporis dolore, atque cum doloribus ea deleniti maxime eos? Harum assumenda inventore qui voluptatem quas.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="question-two">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#answer-two"
+              >
+                Question Two
+              </button>
+            </h5>
+            <div
+              class="accordion-collapse collapse py-3 px-4"
+              id="answer-two"
+              data-bs-parent="#bt-faq"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque earum autem. Culpa maiores veritatis dolorum quasi perspiciatis sed molestiae magni illo deserunt deleniti enim accusamus saepe corrupti laudantium, velit animi amet non, expedita ducimus numquam veniam. Voluptatibus reiciendis voluptate, nesciunt in magnam doloribus corrupti maxime similique expedita aliquam incidunt libero animi cupiditate magni perferendis ipsa odio consequuntur omnis est?
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h5 class="accordion-header" id="question-three">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#answer-three"
+              >
+                Question Three
+              </button>
+            </h5>
+            <div
+              class="accordion-collapse collapse py-3 px-4"
+              id="answer-three"
+              data-bs-parent="#bt-faq"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officia quasi maxime explicabo quos necessitatibus, sint perspiciatis labore incidunt cumque laborum. Perferendis, expedita rem. Quam quibusdam sequi officiis. Sit ipsam est necessitatibus aspernatur repudiandae in odio aperiam atque explicabo eligendi minus dolor, earum totam nemo cupiditate harum nobis veritatis fuga qui. Libero cumque voluptates at sunt quos, quo praesentium laborum!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <div class="container">
+        <p class="lead">
+          Copyright &copy; 2022 Anas Banat
+        </p>
+      </div>
+    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
